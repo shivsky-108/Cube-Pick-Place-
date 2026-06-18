@@ -4,7 +4,7 @@ Two standalone PyBullet GUI simulations of a robotic arm picking and stacking si
 
 | File | Arm | IK | Dependencies |
 |---|---|---|---|
-| `3DOFpickandplace.py` | Custom 4-joint arm built from primitive shapes | Analytical (pure Python geometry) | `pybullet`, `numpy` |
+| `4DOFpickandplace.py` | Custom 4-joint arm built from primitive shapes | Analytical (pure Python geometry) | `pybullet`, `numpy` |
 | `7DOFpickandplace.py` | Real Kuka iiwa URDF (same model as `main1.py`) | PyBullet built-in solver | `pybullet`, `numpy` |
 
 ---
@@ -13,7 +13,7 @@ Two standalone PyBullet GUI simulations of a robotic arm picking and stacking si
 
 ```bash
 # 4-joint primitive arm
-python 3DOFpickandplace.py
+python 4DOFpickandplace.py
 
 # Kuka iiwa 7-DOF URDF arm
 python 7DOFpickandplace.py
@@ -48,7 +48,7 @@ pip install imageio
 
 ---
 
-## `3DOFpickandplace.py` — Custom 4-Joint Arm
+## `4DOFpickandplace.py` — Custom 4-Joint Arm
 
 ### Arm Design
 
@@ -161,7 +161,7 @@ Camera: FOV 60° · near 0.01 m · far 2.0 m · resolution 64 × 64
 
 | File | Role |
 |---|---|
-| `3DOFpickandplace.py` | 4-joint primitive arm simulation |
+| `4DOFpickandplace.py` | 4-joint primitive arm simulation |
 | `7DOFpickandplace.py` | Kuka iiwa 7-DOF URDF simulation |
 | `camera_visualizer.py` | Optional frame saver used by both |
 
